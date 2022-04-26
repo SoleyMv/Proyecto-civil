@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Housing Diagnosis</title>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+
+	<center><br>
+		<h1> Housing Diagnosis </h1></br>
+	</center>
+
+	<div class="wrap">
+
+		<form action="" class="formulario">
+			<div class="radio">
+				<h2>¿Cuál es su nivel de formacion academica?</h2>
+				<input type="radio" name="formacion" id="primaria">
+				<label for="primaria">Primaria</label>
+				<p>
+
+					<input type="radio" name="formacion" id="bachillerato">
+					<label for="bachillerato">Bachillerato</label>
+				<p>
+
+					<input type="radio" name="formacion" id="tecnico">
+					<label for="tecnico">Técnico</label>
+				<p>
+
+					<input type="radio" name="formacion" id="tecnologo">
+					<label for="tecnologo">Tecnólogo</label>
+				<p>
+
+					<input type="radio" name="formacion" id="universitario">
+					<label for="universitario">Universitario </label>
+				<p>
+
+					<input type="radio" name="formacion" id="ninguno">
+					<label for="ninguno">Ninguna</label>
+				<p>
+			</div>
+
+			<!-----------------------------------------------Concepto previo.  ---------------------------------->
+
+			<div class="radio">
+				<h2>¿En qué año fue construida su vivienda?</h2>
+				<input type="radio" name="construccion " id="antes1963">
+				<label for="antes1963">Antes de 1963</label>
+				<p>
+
+					<input type="radio" name="construccion " id="entre1963y1984">
+					<label for="entre1963y1984">Entre 1963 y 1984. </label>
+				<p>
+
+					<input type="radio" name="construccion " id="entre1985y1997">
+					<label for="entre1985y1997">Entre 1985 y 1997.</label>
+				<p>
+
+					<input type="radio" name="construccion " id="entre1998y2010">
+					<label for="entre1998y2010">Entre 1998 y 2010. </label>
+				<p>
+
+					<input type="radio" name="construccion " id="apartir2011">
+					<label for="apartir2011">A partir del 2011. </label>
+				<p>
+			</div>
+
+			<div class="radio">
+				<h2>¿Fue construida por alguna entidad o empresa constructora?</h2>
+				<input type="radio" name="constructora" id="si">
+				<label for="si">SI</label>
+				<p>
+
+					<input type="radio" name="constructora" id="no">
+					<label for="no">NO</label>
+				<p>
+			</div>
+
+			<div class="text">
+				<h2>Si su respuesta anterior fue si, ingrese el nombre de la constructora por la que fue construida su
+					vivienda:</h2>
+				<input type="text" name="nombrecontructora">
+			</div>
+
+			<div class="text">
+				<center>
+					<h1>Al exterior de la vivienda </h1>
+					<h4>Las siguientes preguntas se deberán realizar por fuera de la vivienda para poder observar las
+						características de las preguntas</h4>
+				</center>
+			</div>
+
+			<div class="radio">
+				<h2>¿Cuál es el área de la vivienda? (Frente x fondo)</h2>
+				<input type="radio" name="area" id="20a30">
+				<label for="20a30"> 20 a 30 m^2</label>
+				<p>
+
+					<input type="radio" name="area" id="31a40">
+					<label for="31a40"> 31 a 40 m^2</label>
+				<p>
+
+
+					<input type="radio" name="area" id="41a60">
+					<label for="41a60">41 a 60 m^2.</label>
+				<p>
+
+					<input type="radio" name="area" id="61a70">
+					<label for="61a70">61 a 70 m^2 </label>
+				<p>
+
+					<input type="radio" name="area" id="71a80">
+					<label for="71a80"> 71 a 80 m^2 </label>
+				<p>
+
+					<input type="radio" name="area" id="81a90">
+					<label for="81a90"> 81 a 90 m^2 </label>
+				<p>
+
+					<input type="radio" name="area" id="91mas">
+					<label for="91mas"> 91 m^2 o mayor </label>
+				<p>
+			</div>
+
+			<!----------------------------------------Localización. ---------------------------------------->
+			<div class="radio">
+				<h2> Su vivienda se encuentra en:</h2>
+				<input type="radio" name="ubicacion" id="ladera">
+				<label for="ladera"> Ladera </label>
+				<p>
+
+					<input type="radio" name="ubicacion" id="valle1">
+					<label for="valle1"> Valle </label>
+				<p>
+			</div>
+
+			<div class="checkbox">
+				<h2> ¿Qué elementos se encuentran cercanos a la vivienda? </h2>
+
+				<input type="checkbox" name="elementos" id="quebrada ">
+				<label for="quebrada "> Quebrada </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="valle2">
+					<label for="valle2">Valle </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="montana">
+					<label for="montana"> Montaña</label>
+				<p>
+			</div>
+
+			<div class="checkbox">
+				<h2> ¿Qué uso actualmente predomina en la vivienda? </h2>
+
+				<input type="checkbox" name="elementos" id="residencial ">
+					<label for="residencial "> Residencial </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="comercial">
+					<label for="comercial">Comercial </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="educacion">
+					<label for="educacion"> Educación </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="oficina">
+					<label for="oficina"> Oficinas </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="bodegas">
+					<label for="bodegas"> Bodegas </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="deportiva">
+					<label for="deportiva"> Instalación deportiva </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="salud">
+					<label for="salud"> Centro de salud </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="industrial">
+					<label for="industrial">Industrial </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="hotelero">
+					<label for="hotelero">Hotelero </label>
+				<p>
+
+					<input type="checkbox" name="elementos" id="otros">
+					<label for="otros"> Otros</label>
+				<p>
+			</div>
+
+
+
+			<div>
+
+			</div>
+
+	</div>
+	</form>
+	</div>
+</body>
+
+</html>

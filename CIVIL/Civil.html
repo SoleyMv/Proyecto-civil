@@ -1,0 +1,179 @@
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Housing Diagnosis</title>
+        <meta charset="utf8">
+		<style type="text/css">
+		
+	</style>
+	</head>
+
+	<body>
+    
+        <center>
+            <br> <h1>  Housing Diagnosis </h1></br>
+
+            <form name="form" action="registro.php" method="post">
+                Primer Nombre :<input type="text" name="nombre1" required>  <p> 
+                Segundo Nombre:<input type="text" name="nombre2" required><p>
+                Primer Apellido :<input type="text" name="apellido1" required><p> 
+                Segundo Apellido:<input type="text" name="apellido2" required><p>
+                Cedula :<input type="text" name="cedula" required><p>
+                Telefono :<input type="text" name="telefono" required><p>
+                Correo :<input type="text" name="email"required><p>
+          </form>
+
+		  <form name="formulario1" action="#">
+                 Departamento :<select class="seleccion" name="cosa" onchange="cambia()">
+				     <option value="0">Seleccione
+                         <option value="1">Amazonas 
+                         <option value="2">Antioquia
+                         <option value="3">Arauca
+                         <option value="4">Atlantico
+                         <option value="5">Bolivar
+                         <option value="6">Boyaca
+                         <option value="7">Caldas
+                         <option value="8">Caqueta
+                         <option value="9">Casanare
+                         <option value="10">Cauca
+                         <option value="11">Cesar
+                         <option value="12">Choco
+                         <option value="13">Cordoba
+                         <option value="14">Cundinamarca
+                         <option value="15">Guainia
+                         <option value="16">Guaviare
+                         <option value="17">Huila
+                         <option value="18">La Guajira
+                         <option value="19">Magdalena
+                         <option value="20">Meta
+                         <option value="21">Narino
+                         <option value="22">Norte de Santander
+                         <option value="23">Putumayo
+                         <option value="24">Quindio
+                         <option value="25">Risaralda
+                         <option value="26">San Andrés y Providencia
+                         <option value="27">Santander
+                         <option value="28">Sucre
+                         <option value="29">Tolima
+                         <option value="30">Valle del Cauca
+                         <option value="31">Vaupés
+                         <option value="32">Vichada
+			     </select><p>
+			
+                    Municipio: 	<select class="seleccion" name="opt">
+				     <option value="-">- </select>
+
+                    Barrio :<input type="text" name="barrio"required><p>
+                    Direccion :<input type="text" name="direccion"required><p></p>
+                    Nombre de la unidad :<input type="text" name="nomunidad"required><p></p>
+                    <label for="condiciones">Autorizo el tratamiento de mis datos</label><input type="checkbox" name="condiciones" />
+  <input type="submit" value="Enviar" />
+
+			</form>
+		
+		 <script type="text/javascript">
+			//1) Definir Las Variables Correspondintes
+			var opt_1 = new Array ("-","Leticia","Puerto Nariño");
+            
+			var opt_2 = new Array ("-",  "Abejorral", "Abriaqui",  "Alejandria", "Amaga",   "Amalfi", "Andes", "Angelopolis", "Angostura", "Anori", 
+                                           "Anza","Apartadó",  "Arboletes", "Argelia",    "Armenia", "Bajo Cauca", "Barbosa", "Bello", "Belmira", "Betania", 
+                                           "Betulia","Briceño",   "Buritica",  "Caicedo",    "Caldas",  "Campamento", "Cañasgordas", "Caracoli", "Caramanta", 
+                                           "Carepa","Carolina del Príncipe",  "Caucasia",  "Chigorodó","Cisneros", "Ciudad Bolívar", "Cocorná", "Concepción",
+                                           "Concordia", "Copacabana", "Dabeiba", "Don Matías", "Ebéjico", "El Bagre", "El Carmen de Viboral", "El Peñol", 
+                                           "El Retiro", "El Santuario", "Entrerríos", "Envigado", " Fredonia", "Frontino", "Giraldo", "Girardota", "Gomez Plata",
+                                           "Granada", "Guadalupe","Guarne", "Guatapé", "Heliconia", "Hispania", "Itagui", "Ituango", "Jardin", "Jerico", "La Ceja",
+                                           "La Estrella","La Pintada", "La Unión", "Liborina", "Maceo", "Marinilla", "Medellin", "Montebello", "Murindó", "Mutatá", 
+                                           "Nariño", "Nechí", "Necoclí", "Olaya", "Peque", "Pueblorrico", "Puerto Berrío", "Puerto Nare", "Puerto Triunfo", 
+                                           "Remedios", "Rionegro", "Sabanalarga", "Sabaneta", "Salgar", "San Andrés de Cuerquia", "San Carlos", "San Francisco", 
+                                           "San Jerónimo", "San José de la Montaña", "San Juan de Urabá", "San Luis", "San Pedro de los Milagros", "San Pedro de Urabá", 
+                                           "San Rafael", "San Roque", "San Vicente", "Santa Bárbara", "Santa Fe de Antioquia", "Santa Rosa de Osos", "Santo Domingo", 
+                                           "Segovia", "Sonsón", "Sopetrán", "Támesis", "Tarazá", "Tarso", "Titiribí", "Toledo", "Turbo", "Uramita", "Urrao", 
+                                           "Valdivia", "Valparaíso", "Vegachí", "Venecia", "Vigía del Fuerte", "Yalí", "Yarumal", "Yolombó", "Yondó", "Zaragoza");
+
+			var opt_3 = new Array ("-","Arauca","Arauquita ","Cravo Norte","Fortul","Puerto Rondón","Saravena","Tame");
+
+            var opt_4 = new Array ("-","Barranquilla","Baranoa","Campo de la Cruz","Campo de la Cruz","Galapa","Juan de Acosta","Luruaco",
+                                    "Malambo","Manatí","Palmar de Varela","Piojó","Polonuevo","Ponedera","Puerto Colombia","Repelón",
+                                    "Sabanagrande","Sabanalarga","Santa Lucía","Santo Tomás","Soledad","Suan","Tubará","Usiacurí",);
+                                    
+            var opt_5 = new Array ("-","Achí","Altos del Rosario","Arenal","Arjona","Arroyohondo","Barranco de Loba	","Calamar","Cantagallo","El Carmen de Bolívar","Cartagena de Indias",
+                                   "Cicuco","Clemencia","Córdoba","El Guamo","El Peñón","Hatillo de Loba","Magangué","Mahates","Margarita","María La Baja","Montecristo","Morales",
+                                   "Norosí","Pinillos","Regidor","Río Viejo","San Cristóbal","Arenal","San Fernando","San Jacinto","San Jacinto del Cauca","San Juan Nepomuceno	",
+                                   "San Martín de Loba","San Pablo","Santa Catalina","Santa Cruz de Mompox","Santa Rosa","Santa Rosa del Sur","Simití","Soplaviento","Talaigua Nuevo",
+                                   "Puerto Rico","Turbaco","Turbaná","Villanueva","Zambrano",);
+
+            var opt_6 = new Array ("Chíquiza","Chivatá	","Cómbita","Cucaita","Motavita","Oicatá","Samacá","Siachoque","Sora","Soracá","Sotaquirá","Toca","Tunja",
+                                   "Tuta","Ventaquemada","Chiscas","El Cocuy","El Espino","Guacamayas","Güicán","Panqueba","Labranzagrande","Pajarito","Paya","Pisba",
+                                   "Berbeo","Campohermoso","Miraflores","Páez","San Eduardo","	Zetaquira","Boyacá","Ciénega","Jenesano","Nuevo Colón","Ramiriquí",
+                                   "Rondón","Tibaná","Turmequé","Úmbita","Viracachá","Chinavita","Garagoa","Macanal","Pachavita","San Luis de Gaceno","Santa María",
+                                   "Boavita","Covarachía","La Uvita","San Mateo","Sativanorte","Sativasur","Soatá","Susacón","Tipacoque","Briceño","Buenavista",
+                                   "Caldas","Chiquinquirá","Coper","La Victoria","Maripí","Muzo","Otanche","Pauna","Quípama","Saboyá","San Miguel de Sema","San Pablo de Borbur",
+                                   "Tununguá","Almeida","Chivor","Guateque","Guayatá","La Capilla","Somondoco","Sutatenza","Tenza","Arcabuco","Chitaraque","Gachantivá",
+                                   "Moniquirá","Ráquira","Sáchica","San José de Pare","Santa Sofía","Santana","Sutamarchán	","	Tinjacá	","	Togüí","Villa de Leyva","Aquitania",
+                                   "Cuítiva","	Firavitoba","Gámeza	","	Iza	","	Mongua","Monguí","Nobsa","Pesca","Sogamoso","Tibasosa","Tópaga","Tota","Belén","Busbanzá",
+                                   "Cerinza","	Corrales","	Duitama	","	Floresta","	Paipa","Santa Rosa de Viterbo","Tutazá","Betéitiva","Chita","Jericó	","	Paz de Río",
+                                   "Socha","Socotá	","	Tasco","Cubará","Puerto Boyacá",);
+                                   
+            var opt_7 = new Array ("-", "", "", "", "...");
+            var opt_8 = new Array ("-", "", "", "", "...");
+            var opt_9 = new Array ("-", "", "", "", "...");
+            var opt_10 = new Array ("-", "", "", "", "...");
+            var opt_11 = new Array ("-", "", "", "", "...");
+            var opt_12= new Array ("-", "", "", "", "...");
+            var opt_13= new Array ("-", "", "", "", "...");
+            var opt_14 = new Array ("-", "", "", "", "...");
+            var opt_15 = new Array ("-", "", "", "", "...");
+            var opt_16 = new Array ("-", "", "", "", "...");
+            var opt_17 = new Array ("-", "", "", "", "...");
+            var opt_18 = new Array ("-", "", "", "", "...");
+            var opt_19 = new Array ("-", "", "", "", "...");
+            var opt_20 = new Array ("-", "", "", "", "...");
+            var opt_21 = new Array ("-", "", "", "", "...");
+            var opt_22 = new Array ("-", "", "", "", "...");
+            var opt_23 = new Array ("-", "", "", "", "...");
+            var opt_24 = new Array ("-", "", "", "", "...");
+            var opt_25 = new Array ("-", "", "", "", "...");
+            var opt_26 = new Array ("-", "", "", "", "...");
+            var opt_27 = new Array ("-", "", "", "", "...");
+            var opt_28 = new Array ("-", "", "", "", "...");
+            var opt_29 = new Array ("-", "", "", "", "...");
+            var opt_30 = new Array ("-", "", "", "", "...");
+            var opt_31 = new Array ("-", "", "", "", "...");
+            var opt_32 = new Array ("-", "", "", "", "...");
+
+			// 2) crear una funcion que permita ejecutar el cambio dinamico
+			
+			function cambia(){
+				var cosa;
+				//Se toma el vamor de la "cosa seleccionada"
+				cosa = document.formulario1.cosa[document.formulario1.cosa.selectedIndex].value;
+				//se chequea si la "cosa" esta definida
+				if(cosa!=0){
+					//selecionamos las cosas Correctas
+					mis_opts=eval("opt_" + cosa);
+					//se calcula el numero de cosas
+					num_opts=mis_opts.length;
+					//marco el numero de opt en el select
+					document.formulario1.opt.length = num_opts;
+					//para cada opt del array, la pongo en el select
+					for(i=0; i<num_opts; i++){
+						document.formulario1.opt.options[i].value=mis_opts[i];
+						document.formulario1.opt.options[i].text=mis_opts[i];
+					}
+					}else{
+						//si no habia ninguna opt seleccionada, elimino las cosas del select
+						document.formulario1.opt.length = 1;
+						//ponemos un guion en la unica opt que he dejado
+						document.formulario1.opt.options[0].value="-";
+						document.formulario1.opt.options[0].text="-";
+					}
+					//hacer un reset de las opts
+					document.formulario1.opt.options[0].selected = true;
+					
+				}
+			   
+		</script>
+        </center>
+	</body>
+
+</html>
